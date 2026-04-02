@@ -111,8 +111,8 @@ export type RoutePath =
   | `/academia/topic/:interest`
   | `/accessbriefing/:category{.+}?`
   | `/acfun/article/:categoryId/:sortType?/:timeRange?`
-  | `/acfun/bangumi/:id`
-  | `/acfun/user/video/:uid`
+  | `/acfun/bangumi/:id/:embed?`
+  | `/acfun/user/video/:uid/:embed?`
   | `/acg17/post/all`
   | `/acgvinyl/news`
   | `/acpaa/:id?/:name?`
@@ -757,6 +757,7 @@ export type RoutePath =
   | `/devolverdigital/blog`
   | `/devtrium/`
   | `/dewu/declaration/:categoryId?`
+  | `/dewu/techblog/:categoryId?`
   | `/dgjyw*`
   | `/dgtle/article/:id?/:pushed?`
   | `/dgtle/feed`
@@ -1763,6 +1764,7 @@ export type RoutePath =
   | `/lkong/forum/:id?/:digest?`
   | `/lkong/thread/:id`
   | `/lmu/jobs`
+  | `/locals/content/:community/:option1?/:option2?`
   | `/lofter/collection/:collectionID`
   | `/lofter/tag/:name?/:type?`
   | `/lofter/user/:name?`
@@ -2831,6 +2833,7 @@ export type RoutePath =
   | `/tvb/news/:category?/:language?`
   | `/tver/series/:id`
   | `/tvtropes/featured/:category?`
+  | `/tw-nongmu/market`
   | `/twitch/live/:login`
   | `/twitch/schedule/:login`
   | `/twitch/video/:login/:filter?`
@@ -3092,6 +3095,7 @@ export type RoutePath =
   | `/xueqiu/user/:id/:type?`
   | `/xueqiu/user_stock/:id`
   | `/xunhupay/blog`
+  | `/xupt/jyc/:type?`
   | `/xwenming/:category?`
   | `/xys/new`
   | `/xyu/index/tzgg`
