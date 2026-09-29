@@ -37,6 +37,7 @@ export type RoutePath =
   | `/199it/:category{.+}?`
   | `/19lou/:city?`
   | `/1lou/:params{.+}?`
+  | `/1lou/search/:params`
   | `/1point3acres/blog/:category?`
   | `/1point3acres/category/:id?/:type?/:order?`
   | `/1point3acres/offer/:year?/:major?/:school?`
@@ -51,6 +52,7 @@ export type RoutePath =
   | `/2cycd/:fid/:sort?`
   | `/30secondsofcode/category/:category?/:subCategory?`
   | `/30secondsofcode/latest`
+  | `/35mmc/:category?`
   | `/36kr/:category/:subCategory?/:keyword?`
   | `/36kr/hot-list/:category?`
   | `/3dmgame/games/:name/:type?`
@@ -103,11 +105,15 @@ export type RoutePath =
   | `/95mm/category/:category`
   | `/95mm/tab/:tab?`
   | `/95mm/tag/:tag`
+  | `/98zhibo/zuqiujijin`
   | `/99percentinvisible/transcript`
   | `/9to5/:subsite/:tag?`
   | `/a9vg/:category{.+}?`
   | `/aa1/60s/:category?`
   | `/aamacau/:category?/:id?`
+  | `/abc-tenpo/detail/:id`
+  | `/abc-tenpo/property/:pref?`
+  | `/abc-tenpo/rent-benchmark/:pref?`
   | `/abc/:category{.+}?`
   | `/abmedia/:category?`
   | `/abmedia/index`
@@ -117,6 +123,7 @@ export type RoutePath =
   | `/accessbriefing/:category{.+}?`
   | `/acfun/article/:categoryId/:sortType?/:timeRange?`
   | `/acfun/bangumi/:id/:embed?`
+  | `/acfun/user/article/:uid`
   | `/acfun/user/video/:uid/:embed?`
   | `/acg17/post/all`
   | `/acgvinyl/news`
@@ -146,6 +153,8 @@ export type RoutePath =
   | `/ahau/jwc/:type`
   | `/ahau/main/:type`
   | `/ahjzu/news`
+  | `/ahm/exhibition/xztj`
+  | `/ahm/news/abxw`
   | `/ahmu/news`
   | `/ahstu/:type?`
   | `/ahut/cstzgg`
@@ -267,6 +276,7 @@ export type RoutePath =
   | `/asus/gpu-tweak`
   | `/atcoder/contest/:language?/:rated?/:category?/:keyword?`
   | `/atcoder/post/:language?/:keyword?`
+  | `/athome/rent-store/:pref/:city`
   | `/atptour/news/:lang?`
   | `/augmentcode/blog`
   | `/auto-stats/:category?`
@@ -282,6 +292,7 @@ export type RoutePath =
   | `/baby-kingdom/:id/:order?`
   | `/backlinko/blog`
   | `/bad/:path{.+}?`
+  | `/baidu/baijiahao/:id/:tab?`
   | `/baidu/gushitong/index/:market?`
   | `/baidu/search/:keyword`
   | `/baidu/tieba/forum/:kw/:sortBy?`
@@ -443,6 +454,7 @@ export type RoutePath =
   | `/booru/mmda/tags/:tags?`
   | `/booth.pm/shop/:subdomain`
   | `/bossdesign/:category?`
+  | `/br-klassik/aktuell`
   | `/brave/latest`
   | `/brooklynmuseum/exhibitions/:state?`
   | `/bse/:category?/:keyword?`
@@ -462,6 +474,8 @@ export type RoutePath =
   | `/buct/gr/:type`
   | `/buct/jwc`
   | `/bugzilla/bug/:site/:bugId`
+  | `/bukenavi/detail/:id/:region?`
+  | `/bukenavi/object/:region?/:pref?/:city?`
   | `/bulianglin/`
   | `/bullionvault/gold-news/:category?`
   | `/bupt/funbox`
@@ -499,6 +513,9 @@ export type RoutePath =
   | `/caixinglobal/latest`
   | `/camchina/:id?`
   | `/canada.ca/news/:lang/:department?`
+  | `/canaeru/:pref?/:city?`
+  | `/canalmuseum/consulting/:type`
+  | `/canalmuseum/lszl`
   | `/cankaoxiaoxi/:id?`
   | `/cankaoxiaoxi/column/:id?`
   | `/capitalmind/insights`
@@ -808,6 +825,7 @@ export type RoutePath =
   | `/cyzone/:id?`
   | `/cyzone/author/:id`
   | `/cyzone/label/:name`
+  | `/czechstepbystep/kratke-ceske-zpravy`
   | `/cztv/zjxwlb`
   | `/cztv/zjxwlb/daily`
   | `/dahecube/:type?`
@@ -980,6 +998,7 @@ export type RoutePath =
   | `/douyu/post/:id`
   | `/douyu/room/:id`
   | `/dpm/exhibitions/:type?`
+  | `/dr/:category?`
   | `/dribbble/keyword/:keyword`
   | `/dribbble/popular/:timeframe?`
   | `/dribbble/user/:name`
@@ -1132,8 +1151,6 @@ export type RoutePath =
   | `/fda/cdrh/:titleOnly?`
   | `/fediverse/timeline/:account`
   | `/feng/forum/:id/:type?`
-  | `/ff14/ff14_global/:lang/:type?`
-  | `/ff14/ff14_zh/:type?`
   | `/ff14/global/:lang/:type?`
   | `/ff14/zh/:type?`
   | `/fffdm/manhua/:id/:cdn?`
@@ -1177,6 +1194,7 @@ export type RoutePath =
   | `/forwardfuture/daily`
   | `/forwardfuture/originals`
   | `/fosshub/:id`
+  | `/fraenkelgallery/:type?`
   | `/free/`
   | `/freebuf/articles/:type`
   | `/freecomputerbooks/:category?`
@@ -1678,6 +1696,7 @@ export type RoutePath =
   | `/huggingface/blog-community/:sort?`
   | `/huggingface/blog-zh`
   | `/huggingface/daily-papers/:cycle?/:voteFliter?`
+  | `/huggingface/datasets/:author`
   | `/huggingface/models/:group`
   | `/huijin-inv/news`
   | `/huitun/xiaohongshu/:user_id`
@@ -1721,6 +1740,8 @@ export type RoutePath =
   | `/hzcu/cssearch/latest/:webVpn/:key`
   | `/hzcu/news/latest`
   | `/i-cable/news/:category?`
+  | `/i-tenpo/:pref/:city/:type?`
+  | `/i-tenpo/detail/:id`
   | `/ianspriggs/:category?`
   | `/iapp/news`
   | `/icac/news/:lang?`
@@ -1728,6 +1749,7 @@ export type RoutePath =
   | `/ichunqiu/`
   | `/iciba/:days?/:img_type?`
   | `/icity/:id`
+  | `/icity/imuseum/:city/:type?`
   | `/icourse163/newest`
   | `/idaily/:language?`
   | `/idolmaster/news/:routeParams?`
@@ -1781,11 +1803,14 @@ export type RoutePath =
   | `/infzm/hot`
   | `/inoreader/html_clip/:user/:tag`
   | `/inoreader/rss/:user/:tag`
+  | `/inshokuten/bukken/:area?/:region?`
+  | `/inshokuten/rent-benchmark/:area?/:line?`
   | `/inspirehep/authors/:id`
   | `/inspirehep/literature/:q`
   | `/instagram/:category/:key`
   | `/instagram/2/:category/:key`
   | `/instructables/projects/:category?`
+  | `/inuki-ichiba/rent/:pref?`
   | `/investor/:id{.+}?`
   | `/iplaysoft/`
   | `/iplaysoft/category/:slug`
@@ -1797,8 +1822,10 @@ export type RoutePath =
   | `/iqiyi/album/:id`
   | `/iqiyi/user/video/:uid`
   | `/iqnew/latest`
+  | `/iracing/news`
   | `/iresearch/report/:type?/:id?`
   | `/iresearch/weekly/:id?`
+  | `/iri-search/estate/:area?`
   | `/isct/news/:lang`
   | `/issuehunt/funded/:username/:repo`
   | `/itc/collection/:colType`
@@ -1861,6 +1888,7 @@ export type RoutePath =
   | `/jd/price/:id`
   | `/jetbrains/youtrack/comments/:issueId`
   | `/jewishmuseum/exhibitions`
+  | `/jfnet/industry-report`
   | `/jgsu/jwc`
   | `/jiangnan/jwc/:type?`
   | `/jianshu/collection/:id`
@@ -1901,6 +1929,7 @@ export type RoutePath =
   | `/jlu/ccst/xwzx/:category`
   | `/jlu/jwc`
   | `/jlu/phy/:category/:column/:subcolumn?`
+  | `/jma/wxchart/:type?`
   | `/jnu/yw/:type?`
   | `/joins/chinese/:category?`
   | `/joneslanglasalle/:language?/:category{.+}?`
@@ -1913,6 +1942,7 @@ export type RoutePath =
   | `/jpxgmn/search/:kw`
   | `/jpxgmn/tab/:tab?`
   | `/jpxgmn/weekly`
+  | `/jreast/ridership/:year?`
   | `/jrj/:channelNum`
   | `/jseea/news/:type?`
   | `/jsu/cxzx/:types?`
@@ -1950,6 +1980,7 @@ export type RoutePath =
   | `/ke/researchResults`
   | `/keep/user/:id`
   | `/keepass/`
+  | `/keio/ridership`
   | `/kelownacapnews/:type`
   | `/kemono/:source?/:id?/:type?`
   | `/kenshin/:category?/:type?`
@@ -1965,6 +1996,7 @@ export type RoutePath =
   | `/kmust/job/careers/:type?`
   | `/kmust/job/jobfairs`
   | `/kmust/jwc/:type?`
+  | `/komica/:host/:board/:category?`
   | `/komiic/comic/:id`
   | `/konachan/post/popular_recent/:period?`
   | `/konachan/sfw/post/popular_recent/:period?`
@@ -2032,6 +2064,9 @@ export type RoutePath =
   | `/lfsyd/old_home`
   | `/lfsyd/tag/:tagId?`
   | `/lfsyd/user/:id?`
+  | `/lg/osaka/food-permit`
+  | `/lg/tokyo/food-permit/:ward?`
+  | `/lg/tokyo/rail-ridership/:table?`
   | `/lhratings/research/:type?`
   | `/lianxh/:category?`
   | `/lifetimes/:category?`
@@ -2137,6 +2172,7 @@ export type RoutePath =
   | `/makerworld/trending`
   | `/makerworld/user/:handle/upload`
   | `/malaysiakini/:lang/:category?`
+  | `/maldita/updates/:category?`
   | `/mamibuy/:caty?`
   | `/mangadex/manga/:id/:lang?`
   | `/mangadex/mdlist/:id/:lang?`
@@ -2212,11 +2248,13 @@ export type RoutePath =
   | `/mihoyo/sr/:location?/:category?`
   | `/mihoyo/ys/:location?/:category?`
   | `/mihoyo/zzz/:location?/:category?`
+  | `/mikiki/`
   | `/mindmeister/:category?/:language?`
   | `/minecraft/blockedservers`
   | `/minecraft/java-runtime/:arch?/:javaType?`
   | `/minecraft/version/:versionType?/:linkType?`
   | `/mingpao/:type?/:category?`
+  | `/minhangmuseum/interim`
   | `/miniflux/entry/:feeds/:parameters?`
   | `/miniflux/subscription/:parameters?`
   | `/mirror/:id`
@@ -2288,6 +2326,7 @@ export type RoutePath =
   | `/mymusicsheet/user/sheets/:username/:iso?/:freeOnly?`
   | `/mysql/release/:version?`
   | `/naceweb/blog/:sort?`
+  | `/namoc/zhanlan`
   | `/nanhua/report/:type1/:type2`
   | `/nankai/ai/:type?`
   | `/nankai/cc/:type?`
@@ -2503,6 +2542,7 @@ export type RoutePath =
   | `/odaily/newsflash`
   | `/odaily/search/news/:keyword`
   | `/odaily/user/:id`
+  | `/odakyu/ridership`
   | `/oeeee/app/channel/:id`
   | `/oeeee/app/reporter/:id`
   | `/oeeee/web/:channel`
@@ -2510,6 +2550,7 @@ export type RoutePath =
   | `/oevw/:json?`
   | `/ofweek/news`
   | `/oilchem/:type?/:category?/:subCategory?`
+  | `/okayafrica/music/latest`
   | `/okx/:section?`
   | `/olevod/vod/:id`
   | `/olevod/vodlist`
@@ -2522,6 +2563,7 @@ export type RoutePath =
   | `/onejav/:type/:key?`
   | `/onenotegem/release`
   | `/onet/news`
+  | `/onlyfans/:username`
   | `/oo-software/changelog/:id`
   | `/openai/chatgpt-atlas/release-notes`
   | `/openai/chatgpt/release-notes`
@@ -2594,6 +2636,7 @@ export type RoutePath =
   | `/peopo/topic/:topicId?`
   | `/perplexity/blog`
   | `/perplexity/changelog`
+  | `/petapixel/:category?`
   | `/peterwunder/achievements`
   | `/phoronix/:category?/:topic?`
   | `/phrack/`
@@ -2807,6 +2850,7 @@ export type RoutePath =
   | `/rfi/:path{.+}?`
   | `/right/forum/:id?`
   | `/rmlt/idea`
+  | `/rockstargames/newswire`
   | `/rockstargames/socialclub/events/:game?`
   | `/rockthejvm/articles`
   | `/rodong/news/:language?`
@@ -2965,6 +3009,7 @@ export type RoutePath =
   | `/shopback/:store`
   | `/shopify/apps/:handle/reviews/:page?`
   | `/shopify/apps/search/:q`
+  | `/shopify/engineering/:topic?`
   | `/shoppingdesign/posts`
   | `/shou/www/:type`
   | `/showstart/artist/:id`
@@ -3048,6 +3093,7 @@ export type RoutePath =
   | `/sohu/mobile`
   | `/sohu/mp/:xpt`
   | `/solidot/:type?`
+  | `/sonomama/property/:pref?`
   | `/sony/downloads/:productType/:productId`
   | `/sorrycc/`
   | `/sotwe/user/:id`
@@ -3058,6 +3104,7 @@ export type RoutePath =
   | `/soundofhope/:channel/:id`
   | `/soundon/p/:id`
   | `/sourceforge/:routeParams?`
+  | `/south-plus/forum/:fid?`
   | `/southcn/nfapp/column/:column?`
   | `/southcn/nfapp/reporter/:reporter`
   | `/soweather/warn`
@@ -3203,6 +3250,9 @@ export type RoutePath =
   | `/telegram/media/:entityName/:messageId`
   | `/telegram/stickerpack/:name`
   | `/telegram/stories/:username/:story?`
+  | `/temponw/estates/:area?`
+  | `/temposmart/estates/:pref?/:district?`
+  | `/tenant-shop/chintai/:pref?/:type?`
   | `/tencent/cloud/developer/column/:categoryId?`
   | `/tencent/news/author/:mid`
   | `/tencent/news/coronavirus/data/:province?/:city?`
@@ -3263,6 +3313,7 @@ export type RoutePath =
   | `/thoughtco/:category?`
   | `/thoughtworks/blog`
   | `/threads/:user/:routeParams?`
+  | `/threads/:user/post/:id/:routeParams?`
   | `/threads/search/:keyword/:routeParams?`
   | `/thunderbird/release`
   | `/thwiki/calendar/:before?/:after?`
@@ -3296,9 +3347,12 @@ export type RoutePath =
   | `/tmtpost/column/:id`
   | `/tmtpost/new`
   | `/tmtpost/nictation`
+  | `/toei/ridership`
   | `/tokeninsight/blog/:lang?`
   | `/tokeninsight/bulletin/:lang?`
   | `/tokeninsight/report/:lang?`
+  | `/tokyometro/ridership/:year?`
+  | `/tokyu/ridership/:year?`
   | `/tongji/bks`
   | `/tongji/gs`
   | `/tongji/sem/:type?`
@@ -3317,6 +3371,7 @@ export type RoutePath =
   | `/topys/:keyword?`
   | `/toranoana/news/:category?`
   | `/touhougarakuta/:language/:type`
+  | `/toutiao/channel/:category`
   | `/toutiao/user/token/:token`
   | `/towardsdatascience/latest`
   | `/tpre/cqzr`
@@ -3375,7 +3430,7 @@ export type RoutePath =
   | `/u3c3/search/:keyword/:preview?`
   | `/u9a9/:preview?`
   | `/u9a9/search/:keyword/:preview?`
-  | `/uber/blog/:compat?`
+  | `/uber/blog/:category?`
   | `/ucas/ai`
   | `/ucas/job/:type?`
   | `/uchicago/journals/current/:journal`
@@ -3634,6 +3689,7 @@ export type RoutePath =
   | `/xkb/:channel`
   | `/xmanhua/:uid`
   | `/xmind/mindmap/:lang?`
+  | `/xmlcom/`
   | `/xmnn/epaper/:id?`
   | `/xmnn/news/:category{.+}?`
   | `/xmu/aero/:type`
@@ -3649,6 +3705,7 @@ export type RoutePath =
   | `/xueqiu/fund/:id`
   | `/xueqiu/hots`
   | `/xueqiu/snb/:id`
+  | `/xueqiu/status/:uid/:id`
   | `/xueqiu/stock_comments/:id`
   | `/xueqiu/stock_info/:id/:type?`
   | `/xueqiu/timeline/:usergroup_id?`
@@ -3703,6 +3760,8 @@ export type RoutePath =
   | `/yinxiang/note`
   | `/yinxiang/personal/:id`
   | `/yinxiang/tag/:id`
+  | `/yinxubwg/exhibitionIndex/:type`
+  | `/yinxubwg/notice`
   | `/ymgal/article/:type?`
   | `/ymgal/game/release`
   | `/yna/:lang?/:channel?`
